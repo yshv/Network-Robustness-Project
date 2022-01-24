@@ -1,0 +1,41 @@
+NetworkToolkit
+To run most of the scripts, the following dependencies need to be installed:
+
+pymongo
+conda install -c conda-forge pymongo
+
+pandas
+conda install -c conda-forge pandas
+
+networkx
+conda install -c conda-forge networkx
+
+numpy
+conda install -c conda-forge numpy
+
+matplotlib
+conda install -c conda-forge matplotlib
+
+sklearn
+conda install scikit-learn
+
+progress bar - handy little progress bar library
+conda install -c conda-forge progress
+
+dask
+conda install -c conda-forge dask
+
+tqdm
+conda install -c conda-forge tqdm
+
+ray
+pip install -U ray
+
+cffi
+conda install cffi
+
+mip
+pip install mip
+
+gurobi
+conda install -c gurobi gurobi

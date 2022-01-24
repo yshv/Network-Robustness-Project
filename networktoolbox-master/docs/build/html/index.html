@@ -1,0 +1,1446 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>NetworkToolkit Documentation &mdash; NetworkToolkit 1.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="#" class="icon icon-home"> NetworkToolkit
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">NetworkToolkit Documentation</a></li>
+<li><a class="reference internal" href="#networktoolkit-introduction">NetworkToolkit Introduction</a></li>
+<li><a class="reference internal" href="#module-NetworkToolkit.Topology">Topology Tools</a></li>
+<li><a class="reference internal" href="#module-NetworkToolkit.NetworkSimulator">NetworkSimulator</a></li>
+<li><a class="reference internal" href="#module-NetworkToolkit.Network">Optical Network Tools</a></li>
+<li><a class="reference internal" href="#module-NetworkToolkit.Demand">Demand Tools</a></li>
+<li><a class="reference internal" href="#module-NetworkToolkit.PhysicalLayer">Physical Layer Tools</a></li>
+<li><a class="reference internal" href="#module-NetworkToolkit.Routing.Heuristics">Routing Tools</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">NetworkToolkit</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>NetworkToolkit Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="networktoolkit-documentation">
+<h1>NetworkToolkit Documentation<a class="headerlink" href="#networktoolkit-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="networktoolkit-introduction">
+<h1>NetworkToolkit Introduction<a class="headerlink" href="#networktoolkit-introduction" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="module-NetworkToolkit.Topology">
+<span id="topology-tools"></span><h1>Topology Tools<a class="headerlink" href="#module-NetworkToolkit.Topology" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-Topology"></span><dl class="py class">
+<dt id="NetworkToolkit.Topology.Topology">
+<em class="property">class </em><code class="sig-prename descclassname">NetworkToolkit.Topology.</code><code class="sig-name descname">Topology</code><a class="headerlink" href="#NetworkToolkit.Topology.Topology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class</p>
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.assign_NSR">
+<code class="sig-name descname">assign_NSR</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.assign_NSR" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>graph</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.assign_congestion">
+<code class="sig-name descname">assign_congestion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.assign_congestion" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>graph</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.assign_distances">
+<code class="sig-name descname">assign_distances</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">scaling_factor</span><span class="o">=</span><span class="default_value">1.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.assign_distances" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is for assigning distances from the kernel density estimation of the NSF net</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>scaling_factor</strong> – </p></li>
+<li><p><strong>graph</strong> – graph to be assigned distances</p></li>
+<li><p><strong>scaling_factor</strong> – factor by which to scale distances by: avg_link_dist/1463</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>graph</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>nx.Graph()</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.assign_distances_grid">
+<code class="sig-name descname">assign_distances_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">pythagorus</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">harvesine</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">lon</span><span class="o">=</span><span class="default_value">'y'</span></em>, <em class="sig-param"><span class="n">lat</span><span class="o">=</span><span class="default_value">'x'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.assign_distances_grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method assigns the distances of a graph using a grid system.
+:param graph: graph to assign distances
+:param pythagorus: if set to true, it calculates distances purely from pythagorus
+:param harvesine: if set to true, it calculates distances accordingly using harvesine formula
+:param lon: node attribute name for longitude - default “y” - only applies to harvesine calculation
+:param lat: node attribute name for lattitude - default “x” - only applies to harvesine calculation
+:return: graph with distances assigned</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.calculate_harvesine_distance">
+<code class="sig-name descname">calculate_harvesine_distance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lat_1</span></em>, <em class="sig-param"><span class="n">lat_2</span></em>, <em class="sig-param"><span class="n">lon_1</span></em>, <em class="sig-param"><span class="n">lon_2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.calculate_harvesine_distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.check_C1">
+<code class="sig-name descname">check_C1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.check_C1" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>graph</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.check_C2">
+<code class="sig-name descname">check_C2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.check_C2" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>graph</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.check_enough_topologies">
+<code class="sig-name descname">check_enough_topologies</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">N</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">collection_name</span></em>, <em class="sig-param"><span class="n">database_name</span></em>, <em class="sig-param"><span class="n">_len</span><span class="o">=</span><span class="default_value">3000</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.check_enough_topologies" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>N</strong> – </p></li>
+<li><p><strong>k</strong> – </p></li>
+<li><p><strong>collection_name</strong> – </p></li>
+<li><p><strong>database_name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.check_max_degree_for_link">
+<code class="sig-name descname">check_max_degree_for_link</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ACMN</span></em>, <em class="sig-param"><span class="n">link</span></em>, <em class="sig-param"><span class="n">degree_max</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.check_max_degree_for_link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.check_unique_binary_topology_vector">
+<code class="sig-name descname">check_unique_binary_topology_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">topology_vector</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">N</span></em>, <em class="sig-param"><span class="n">collection_name</span></em>, <em class="sig-param"><span class="n">database_name</span></em>, <em class="sig-param"><span class="n">scaling_factor</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.check_unique_binary_topology_vector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>topology_vector</strong> – </p></li>
+<li><p><strong>alpha</strong> – </p></li>
+<li><p><strong>N</strong> – </p></li>
+<li><p><strong>collection_name</strong> – </p></li>
+<li><p><strong>database_name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.check_unique_topology_vector">
+<code class="sig-name descname">check_unique_topology_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">topology_vector</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.check_unique_topology_vector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>topology_vector</strong> – The topology vector to be tested</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True or False - depending on condition</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.choice_prob">
+<code class="sig-name descname">choice_prob</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">beta</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">BA_pure</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">log_distance</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">waxman_graph</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">SBAG</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">normalise</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">BA_plus_dist</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.choice_prob" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create a destination node probability list given the source node
+and the graph on which to perform this.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>N_S</strong> – Source node for which the probability list is meant for.</p></li>
+<li><p><strong>graph</strong> – Graph for which to create the probability list from (needs x
+and y coordinate (longitude and lattitude))</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of probabilites corresponding to the choice of nodes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.create_BA_ACMN">
+<code class="sig-name descname">create_BA_ACMN</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">N</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">collection_name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">database_name</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.create_BA_ACMN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create a Barabási and Albert based random graph, which works on the principle of “rich get richer”
+:param N: The number of nodes in the graph
+:param k: mean k to create the graphs with (avg_degree)
+:param collection_name: collection name under which to make the check for uniqueness
+:param database_name: Name of database to save in.
+:return: graph (nx graph)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.create_ER_ACMN">
+<code class="sig-name descname">create_ER_ACMN</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">N</span></em>, <em class="sig-param"><span class="n">p</span></em>, <em class="sig-param"><span class="n">collection_name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">database_name</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.create_ER_ACMN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create Erdoes-Renyi graphs with checks for minimal topological charachteristiscs for OPtical Networks.
+:param N: The number of nodes in the graph
+:param p: the probability of having a link added (N*p = avg_degree)
+:param collection_name: collection name under which to make the check for uniqueness
+:param database_name: Name of database to save in.
+:return: graph (nx graph)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.create_WS_ACMN">
+<code class="sig-name descname">create_WS_ACMN</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">N</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">p</span></em>, <em class="sig-param"><span class="n">collection_name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">database_name</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.create_WS_ACMN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create Watts-Strogatz graph that returns a Watts strogatz graph, with minimal topological parameters for optical networks.
+:param N: Number of nodes in the graph
+:param k: mean k to create the graphs with (avg_degree)
+:param p: possibility of making a connection
+:param collection_name: collection name under which to make the check for uniqueness
+:param database_name: database name under which to make the check for uniqueness
+:return: graph (nx graph)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.create_binary_topology_vector">
+<code class="sig-name descname">create_binary_topology_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.create_binary_topology_vector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>graph</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.create_random_ACMN">
+<code class="sig-name descname">create_random_ACMN</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">N</span></em>, <em class="sig-param"><span class="n">alpha</span></em>, <em class="sig-param"><span class="n">collection_name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">database_name</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.create_random_ACMN" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method creates a randomly generated graph that is subject to constraints C1, C2 and unique topology within the
+_topology_vectors.csv file. It return a graph and topology vector for said graph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>N</strong> – Number of Nodes</p></li>
+<li><p><strong>L</strong> – Number of Links</p></li>
+<li><p><strong>alpha</strong> – Connectivity of graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>graph, topology_vector</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>nx.Graph()</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.create_random_ACMN_dataset">
+<code class="sig-name descname">create_random_ACMN_dataset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">N</span></em>, <em class="sig-param"><span class="n">amount</span></em>, <em class="sig-param"><span class="n">database_name</span></em>, <em class="sig-param"><span class="n">collection_name</span></em>, <em class="sig-param"><span class="n">use_dask</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">BA</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">WS</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">ER</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">random</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">pref_grid</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">alpha</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">k</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">p</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">grid_graph</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">L</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">bar</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.create_random_ACMN_dataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to create ACMN datasets, which creates the specified amount of topologies randomly, with the specified amount of distance realisations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>N</strong> – Number of nodes of ACMN</p></li>
+<li><p><strong>L</strong> – Number of links of ACMN</p></li>
+<li><p><strong>alpha</strong> – Connectivity of graph</p></li>
+<li><p><strong>amount</strong> – Amount of ACMN networks to create</p></li>
+<li><p><strong>distance_realisations</strong> – Amount of network distance realisations to create</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None, saves all topologies to disk in Optical-Networks -&gt;Topology</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.create_random_ACMN_grid">
+<code class="sig-name descname">create_random_ACMN_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">N</span></em>, <em class="sig-param"><span class="n">L</span></em>, <em class="sig-param"><span class="n">pos</span></em>, <em class="sig-param"><span class="n">collection_name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">database_name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">degree_max</span><span class="o">=</span><span class="default_value">5</span></em>, <em class="sig-param"><span class="n">scaling_factor</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">pythagorus</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">harvesine</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">weighted</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.create_random_ACMN_grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create random ACMN with a pre-determined grid structure.
+:param N: Number of node
+:param L: Number of links
+:param pos: list of tuples with x and y pos
+:param collection_name: database collection name
+:param database_name: database name
+:param degree_max: max degree allowed
+:return: ACMN - nx.Graph()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.create_real_based_grid_graph">
+<code class="sig-name descname">create_real_based_grid_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">grid_graph</span></em>, <em class="sig-param"><span class="n">L</span></em>, <em class="sig-param"><span class="n">choice_prob_func</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">degree_max</span><span class="o">=</span><span class="default_value">5</span></em>, <em class="sig-param"><span class="n">degree_min</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">database_name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">collection_name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">alternating_pref_random</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.create_real_based_grid_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create graphs that are based on real node locations, however are randomly connected
+in a fashion that mimics real network topologies. Weighting probabilites either by degree or
+distances between nodes.
+:param grid_graph: graph from real topology
+:param L: Number of links to insert into graph
+:param degree_max: maximum degree to allow
+:param degree_min: minimum degree to allow
+:return: ACMN - nx.Graph()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.create_save_database_ACMN">
+<code class="sig-name descname">create_save_database_ACMN</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">N</span></em>, <em class="sig-param"><span class="n">collection_name</span></em>, <em class="sig-param"><span class="n">database_name</span></em>, <em class="sig-param"><span class="n">grid_graph</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">L</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">BA</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">ER</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">WS</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">random</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">pref_grid</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">alpha</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">k</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">p</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">node_data</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.create_save_database_ACMN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create one of the random graph structures and save it to a database connected to.
+:param N: Number of nodes
+:param collection_name: collection name to save the graph under
+:param database_name: database name under which to save the graph
+:param BA: Set to True for Barabase-Alvert Graph
+:param ER: Set to True for Erdoes-Renyi Graph
+:param WS: Set to True for Watts-Strogatz
+:param random: Set to True for random uniform
+:param alpha: connectivity if creating random uniform graph
+:param k: mean degree k for WS, BA
+:param p: parameter p for ER, WS
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.create_topology_vector">
+<code class="sig-name descname">create_topology_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.create_topology_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method creates the topology vector for a given input graph</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>graph</strong> – the graph from which to derive the topology vector</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>topology_vector</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.find_degree_vector_ij">
+<code class="sig-name descname">find_degree_vector_ij</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">degree_vector_2D</span></em>, <em class="sig-param"><span class="n">degree_vector_3D_1</span></em>, <em class="sig-param"><span class="n">degree_vector_max1</span></em>, <em class="sig-param"><span class="n">diameter</span></em>, <em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.find_degree_vector_ij" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.gaussian_pdf">
+<code class="sig-name descname">gaussian_pdf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">span</span></em>, <em class="sig-param"><span class="n">bin_size</span><span class="o">=</span><span class="default_value">30</span></em>, <em class="sig-param"><span class="n">sample_number</span><span class="o">=</span><span class="default_value">1000</span></em>, <em class="sig-param"><span class="n">plot</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.gaussian_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>span</strong> – </p></li>
+<li><p><strong>bin_size</strong> – </p></li>
+<li><p><strong>sample_number</strong> – </p></li>
+<li><p><strong>plot</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.get_avg_distance">
+<code class="sig-name descname">get_avg_distance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.get_avg_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method gets the average link distance for a given input graph</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>graph</strong> – Graph to calculate the average link distance for</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>average link distance</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.init_EURO_core">
+<code class="sig-name descname">init_EURO_core</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.init_EURO_core" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.init_nsf">
+<code class="sig-name descname">init_nsf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.init_nsf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.init_three_node">
+<code class="sig-name descname">init_three_node</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.init_three_node" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.kernel_density_pdf">
+<code class="sig-name descname">kernel_density_pdf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bandwidth</span><span class="o">=</span><span class="default_value">250</span></em>, <em class="sig-param"><span class="n">plot</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.kernel_density_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bandwidth</strong> – </p></li>
+<li><p><strong>plot</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.load_graph">
+<code class="sig-name descname">load_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.load_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to load graphs from weighted edge lists stored in Topology</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – Name of graph to be loaded</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>returns graph with congestion and NSR assignments</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>nx.Graph()</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.load_topology">
+<code class="sig-name descname">load_topology</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.load_topology" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.make_edge_list">
+<code class="sig-name descname">make_edge_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em>, <em class="sig-param"><span class="n">t</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.make_edge_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.make_weighted_edge_list">
+<code class="sig-name descname">make_weighted_edge_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em>, <em class="sig-param"><span class="n">t</span></em>, <em class="sig-param"><span class="n">w</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.make_weighted_edge_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.plot_graph">
+<code class="sig-name descname">plot_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.plot_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.plot_topology">
+<code class="sig-name descname">plot_topology</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.plot_topology" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.read_topology_vector_dataset">
+<code class="sig-name descname">read_topology_vector_dataset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.read_topology_vector_dataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method automatically reads the current saved topology vectors</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>topology_vector_dataset</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.save_graph">
+<code class="sig-name descname">save_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.save_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method that saves graphs as a weighted edge list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>graph</strong> – Graph to be saved</p></li>
+<li><p><strong>name</strong> – Name to be saved under in Topolgy Directory</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.save_graph_database">
+<code class="sig-name descname">save_graph_database</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">db_name</span></em>, <em class="sig-param"><span class="n">collection_name</span></em>, <em class="sig-param"><span class="n">k</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">scaling_factor</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">node_data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.save_graph_database" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.save_graph_gexf">
+<code class="sig-name descname">save_graph_gexf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.save_graph_gexf" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>graph</strong> – </p></li>
+<li><p><strong>name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.save_graph_json">
+<code class="sig-name descname">save_graph_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.save_graph_json" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>graph</strong> – </p></li>
+<li><p><strong>name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.save_topology">
+<code class="sig-name descname">save_topology</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.save_topology" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Topology.Topology.write_topology_vector_dataset">
+<code class="sig-name descname">write_topology_vector_dataset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.Topology.write_topology_vector_dataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method creates a pandas dataframe from the global topology_vector_dataset and saves as .csv</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="NetworkToolkit.Topology.internet_topology_zoo">
+<code class="sig-prename descclassname">NetworkToolkit.Topology.</code><code class="sig-name descname">internet_topology_zoo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">folder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.internet_topology_zoo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to log topologies from internet topology zoo
+:param folder: path to folder with topologies in it.
+:return: None - saves topologies to db: “Topology_Data” collection: “real”</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="NetworkToolkit.Topology.real_topology_logger_csv">
+<code class="sig-prename descclassname">NetworkToolkit.Topology.</code><code class="sig-name descname">real_topology_logger_csv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">folder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.real_topology_logger_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to log the real CONUS topologies in the db:”Topology_Data” collection:
+“real”. For the CONUS USA topologies in .csv
+:param folder: the folder with all .csv files in them.
+:return: None</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="NetworkToolkit.Topology.sdn_lib_topology_logger">
+<code class="sig-prename descclassname">NetworkToolkit.Topology.</code><code class="sig-name descname">sdn_lib_topology_logger</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">folder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Topology.sdn_lib_topology_logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method for to log topologies from sdnlib in .txt format.
+:param folder: Folder with .txt files inside.
+:return: None - saves topologies to db: “Topology_Data” collection: “real”</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-NetworkToolkit.NetworkSimulator">
+<span id="networksimulator"></span><h1>NetworkSimulator<a class="headerlink" href="#module-NetworkToolkit.NetworkSimulator" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="NetworkToolkit.NetworkSimulator.NetworkSimulator">
+<em class="property">class </em><code class="sig-prename descclassname">NetworkToolkit.NetworkSimulator.</code><code class="sig-name descname">NetworkSimulator</code><a class="headerlink" href="#NetworkToolkit.NetworkSimulator.NetworkSimulator" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="NetworkToolkit.NetworkSimulator.NetworkSimulator.incremental_uniform_demand_simulation">
+<code class="sig-name descname">incremental_uniform_demand_simulation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">routing_func</span><span class="o">=</span><span class="default_value">'FF-kSP'</span></em>, <em class="sig-param"><span class="n">channel_bandwidth</span><span class="o">=</span><span class="default_value">32000000000.0</span></em>, <em class="sig-param"><span class="n">start_bandwidth</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">incremental_bandwidth</span><span class="o">=</span><span class="default_value">1000000000.0</span></em>, <em class="sig-param"><span class="n">e</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.NetworkSimulator.NetworkSimulator.incremental_uniform_demand_simulation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to simulate incremental uniform demand routing simulations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>graph</strong> – Graph to use for optical network simulation - nx.Graph()</p></li>
+<li><p><strong>channels</strong> – Amount of channels in ON - int</p></li>
+<li><p><strong>channel_bandwidth</strong> – Channel bandwidth - float</p></li>
+<li><p><strong>start_bandwidth</strong> – Start Demand bandwidth - float</p></li>
+<li><p><strong>incremental_bandwidth</strong> – Bandwidth to increment with each step - float</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dictionary with simulation results</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.NetworkSimulator.NetworkSimulator.incremental_uniform_demand_simulation_graph_list">
+<code class="sig-name descname">incremental_uniform_demand_simulation_graph_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph_list</span></em>, <em class="sig-param"><span class="n">routing_func</span><span class="o">=</span><span class="default_value">'FF-kSP'</span></em>, <em class="sig-param"><span class="n">channel_bandwidth</span><span class="o">=</span><span class="default_value">32000000000.0</span></em>, <em class="sig-param"><span class="n">start_bandwidth</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">incremental_bandwidth</span><span class="o">=</span><span class="default_value">1000000000.0</span></em>, <em class="sig-param"><span class="n">e</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.NetworkSimulator.NetworkSimulator.incremental_uniform_demand_simulation_graph_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to feed in graph_list and automate the incremental uniform demand
+simulations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>graph_list</strong> – List of graphs gotten from database - list</p></li>
+<li><p><strong>routing_func</strong> – Function to use for routing,</p></li>
+</ul>
+</dd>
+</dl>
+<p>check Network.py for details - string
+string
+:param channel_bandwidth:           Bandwidth of channels - float
+:param start_bandwidth:             Initial demand bandwidth to start with -
+float
+:param incremental_bandwidth:       Bandwidth to increment with - float
+:param e:                           Maximum MNH+e length paths to allow in k-SP</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-NetworkToolkit.Network">
+<span id="optical-network-tools"></span><h1>Optical Network Tools<a class="headerlink" href="#module-NetworkToolkit.Network" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="NetworkToolkit.Network.OpticalNetwork">
+<em class="property">class </em><code class="sig-prename descclassname">NetworkToolkit.Network.</code><code class="sig-name descname">OpticalNetwork</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">B_o</span><span class="o">=</span><span class="default_value">5000000000000.0</span></em>, <em class="sig-param"><span class="n">channel_bandwidth</span><span class="o">=</span><span class="default_value">32000000000.0</span></em>, <em class="sig-param"><span class="n">mimic_topology</span><span class="o">=</span><span class="default_value">'nsf'</span></em>, <em class="sig-param"><span class="n">routing_func</span><span class="o">=</span><span class="default_value">'FF-kSP'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Network.OpticalNetwork" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="NetworkToolkit.Network.OpticalNetwork.convert_bandwidth_to_connection">
+<code class="sig-name descname">convert_bandwidth_to_connection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bandwidth_demand</span></em>, <em class="sig-param"><span class="n">SNR_matrix</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Network.OpticalNetwork.convert_bandwidth_to_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to convert bandwidth demands into WDM fixed grid connection requests with SNR worst case estimation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>bandwidth_demand</strong> – TM with banwidth demands</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>TM with connection requests</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Network.OpticalNetwork.create_dynamic_demand">
+<code class="sig-name descname">create_dynamic_demand</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_t</span></em>, <em class="sig-param"><span class="n">min_bandwidth</span></em>, <em class="sig-param"><span class="n">max_bandwidth</span></em>, <em class="sig-param"><span class="n">_lambda</span></em>, <em class="sig-param"><span class="n">_mu</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Network.OpticalNetwork.create_dynamic_demand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create a set of demand matrices with poisson process generated bandwidth demands, given a normalised demand distribution over nodes.
+It then uses worst case SNR esetimation to tell us how many connections of given bandwidth to setup and return the demand matrices in terms of their connection
+request demands.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_t</strong> – The amount of connections to establish (amount of traffic)</p></li>
+<li><p><strong>min_bandwidth</strong> – min bandwdth demands (Gbps)</p></li>
+<li><p><strong>max_bandwidth</strong> – max bandwidth demands (Gbps)</p></li>
+<li><p><strong>_lambda</strong> – distribution mean for exponentional distribution to use to generate the time between connetions to be established</p></li>
+<li><p><strong>_mu</strong> – distrinution mean for exponentional distribution to use to generate the time between establishing connections and tearing them down.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>array of demand matrices for connection requests shape - (2*n_t, nodes, nodes)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Network.OpticalNetwork.estimate_worst_case_SNR">
+<code class="sig-name descname">estimate_worst_case_SNR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Network.OpticalNetwork.estimate_worst_case_SNR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method that estimates the worst case SNR for each node pair with estimating full occupancy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>SNR_list - (s, d, SNR)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Network.OpticalNetwork.get_SNR_matrix">
+<code class="sig-name descname">get_SNR_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Network.OpticalNetwork.get_SNR_matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-NetworkToolkit.Demand">
+<span id="demand-tools"></span><h1>Demand Tools<a class="headerlink" href="#module-NetworkToolkit.Demand" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="NetworkToolkit.Demand.Demand">
+<em class="property">class </em><code class="sig-prename descclassname">NetworkToolkit.Demand.</code><code class="sig-name descname">Demand</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Demand.Demand" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="NetworkToolkit.Demand.Demand.construct_poisson_process_demand_matrix">
+<code class="sig-name descname">construct_poisson_process_demand_matrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">demand_data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Demand.Demand.construct_poisson_process_demand_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to construct a demand matrix for poisson process demand (dynamic) time based.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>demand_data</strong> – dict of demand data - {“id”:id, “sn”:source node, “dn”:destination node, “bandwidth”:bandwidth requirement for connections,
+“time”: time, “establish”:establish - 1 takedown -0, “index”:index}</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of demand matrices</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Demand.Demand.create_poisson_process_demand">
+<code class="sig-name descname">create_poisson_process_demand</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_t</span></em>, <em class="sig-param"><span class="n">min_bandwidth</span></em>, <em class="sig-param"><span class="n">max_bandwidth</span></em>, <em class="sig-param"><span class="n">_lambda</span></em>, <em class="sig-param"><span class="n">_mu</span></em>, <em class="sig-param"><span class="n">demand_distribution</span><span class="o">=</span><span class="default_value">array([], dtype=float64)</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Demand.Demand.create_poisson_process_demand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create poisson demand scheme for dynamic demand for time series analysis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_t</strong> – number of traffic</p></li>
+<li><p><strong>min_bandwidth</strong> – minimum bandwidth demand</p></li>
+<li><p><strong>max_bandwidth</strong> – maximum bandwidth demand</p></li>
+<li><p><strong>_lambda</strong> – mean for exponential distribution of start times</p></li>
+<li><p><strong>_mu</strong> – mean for exponential distribution of end times of connections</p></li>
+</ul>
+</dd>
+</dl>
+<p>:param demand_distribution:the normalised distribution over nodes
+:return: dict of demand data - {“id”:id, “sn”:source node, “dn”:destination node, “bandwidth”:bandwidth requirement for connections,</p>
+<blockquote>
+<div><p>“time”: time, “establish”:establish - 1 takedown -0, “index”:index}</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Demand.Demand.create_uniform_bandwidth_requests">
+<code class="sig-name descname">create_uniform_bandwidth_requests</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bandwidth</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Demand.Demand.create_uniform_bandwidth_requests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create a uniform bandwidth demand matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>bandwidth</strong> – uniform bandwidth between each node pair</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>demand matrix</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Demand.Demand.create_uniform_connection_requests">
+<code class="sig-name descname">create_uniform_connection_requests</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">set</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Demand.Demand.create_uniform_connection_requests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create a uniform connections requests matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>set</strong> – amount of connection requests per node pair</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>demand matrix</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Demand.Demand.generate_random_demand_distribution">
+<code class="sig-name descname">generate_random_demand_distribution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Demand.Demand.generate_random_demand_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to generate a random normalalised symmetric distribution for a graph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>random normalised demand distribution in nd array of shape (nodes,nodes)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-NetworkToolkit.PhysicalLayer">
+<span id="physical-layer-tools"></span><h1>Physical Layer Tools<a class="headerlink" href="#module-NetworkToolkit.PhysicalLayer" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer">
+<em class="property">class </em><code class="sig-prename descclassname">NetworkToolkit.PhysicalLayer.</code><code class="sig-name descname">PhysicalLayer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">channels</span></em>, <em class="sig-param"><span class="n">channel_bandwidth</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.add_LOGON_launch_power_to_links">
+<code class="sig-name descname">add_LOGON_launch_power_to_links</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">channels</span></em>, <em class="sig-param"><span class="n">Plot</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.add_LOGON_launch_power_to_links" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>channels</strong> – </p></li>
+<li><p><strong>Plot</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.add_SNR">
+<code class="sig-name descname">add_SNR</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">channels</span></em>, <em class="sig-param"><span class="n">N</span></em>, <em class="sig-param"><span class="n">NF</span><span class="o">=</span><span class="default_value">2.51188643150958</span></em>, <em class="sig-param"><span class="n">a</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">L</span><span class="o">=</span><span class="default_value">80</span></em>, <em class="sig-param"><span class="n">h</span><span class="o">=</span><span class="default_value">6.62607004e-34</span></em>, <em class="sig-param"><span class="n">f</span><span class="o">=</span><span class="default_value">193548387096774.16</span></em>, <em class="sig-param"><span class="n">B_ref</span><span class="o">=</span><span class="default_value">32000000000</span></em>, <em class="sig-param"><span class="n">_lambda</span><span class="o">=</span><span class="default_value">1.5500000000000002e-06</span></em>, <em class="sig-param"><span class="n">D</span><span class="o">=</span><span class="default_value">17</span></em>, <em class="sig-param"><span class="n">gamma</span><span class="o">=</span><span class="default_value">1.3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.add_SNR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.add_SNR_links">
+<code class="sig-name descname">add_SNR_links</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.add_SNR_links" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.add__P_ase_NSR_to_links">
+<code class="sig-name descname">add__P_ase_NSR_to_links</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Plot</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.add__P_ase_NSR_to_links" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.add_non_linear_NSR_to_links">
+<code class="sig-name descname">add_non_linear_NSR_to_links</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Plot</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">channels_full</span><span class="o">=</span><span class="default_value">156</span></em>, <em class="sig-param"><span class="n">channel_bandwidth</span><span class="o">=</span><span class="default_value">32000000000.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.add_non_linear_NSR_to_links" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Plot</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.add_non_linear_to_links">
+<code class="sig-name descname">add_non_linear_to_links</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.add_non_linear_to_links" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.add_uniform_launch_power_to_links">
+<code class="sig-name descname">add_uniform_launch_power_to_links</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">channels</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.add_uniform_launch_power_to_links" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>channels</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.add_wavelengths_full_occupation">
+<code class="sig-name descname">add_wavelengths_full_occupation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">channels_full</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.add_wavelengths_full_occupation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.add_wavelengths_to_links">
+<code class="sig-name descname">add_wavelengths_to_links</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wavelengths_dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.add_wavelengths_to_links" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.assign_LOGON_launch_powers">
+<code class="sig-name descname">assign_LOGON_launch_powers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">edge</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.assign_LOGON_launch_powers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.assign_physical_wavelengths">
+<code class="sig-name descname">assign_physical_wavelengths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">channels</span><span class="o">=</span><span class="default_value">156</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.assign_physical_wavelengths" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.calculate_capacity_lightpath">
+<code class="sig-name descname">calculate_capacity_lightpath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path_cost</span></em>, <em class="sig-param"><span class="n">Bref</span><span class="o">=</span><span class="default_value">32000000000</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.calculate_capacity_lightpath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.calculate_throughput_path">
+<code class="sig-name descname">calculate_throughput_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.calculate_throughput_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_P_ase">
+<code class="sig-name descname">get_P_ase</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em>, <em class="sig-param"><span class="n">L</span></em>, <em class="sig-param"><span class="n">NF</span><span class="o">=</span><span class="default_value">2.51188643150958</span></em>, <em class="sig-param"><span class="n">h</span><span class="o">=</span><span class="default_value">6.62607004e-34</span></em>, <em class="sig-param"><span class="n">B_ref</span><span class="o">=</span><span class="default_value">32000000000</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_P_ase" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method gets the amplified spontaneous emission noise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>NF</strong> – Noise function</p></li>
+<li><p><strong>g</strong> – gain</p></li>
+<li><p><strong>h</strong> – plancs constant</p></li>
+<li><p><strong>f</strong> – frequency of wavelength</p></li>
+<li><p><strong>B_ref</strong> – bandwidth of channel</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>amplified spontaneous emission power</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_SNR_P_ase">
+<code class="sig-name descname">get_SNR_P_ase</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">edge</span></em>, <em class="sig-param"><span class="n">gamma</span><span class="o">=</span><span class="default_value">1.2</span></em>, <em class="sig-param"><span class="n">channel_bandwidth</span><span class="o">=</span><span class="default_value">32000000000</span></em>, <em class="sig-param"><span class="n">C_r</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">alpha</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">D</span><span class="o">=</span><span class="default_value">18</span></em>, <em class="sig-param"><span class="n">Plot</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'test'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_SNR_P_ase" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_SNR_non_linear">
+<code class="sig-name descname">get_SNR_non_linear</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">edge</span></em>, <em class="sig-param"><span class="n">gamma</span><span class="o">=</span><span class="default_value">1.2</span></em>, <em class="sig-param"><span class="n">channel_bandwidth</span><span class="o">=</span><span class="default_value">32000000000</span></em>, <em class="sig-param"><span class="n">C_r</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">alpha</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">D</span><span class="o">=</span><span class="default_value">18</span></em>, <em class="sig-param"><span class="n">Plot</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'test'</span></em>, <em class="sig-param"><span class="n">channels_full</span><span class="o">=</span><span class="default_value">156</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_SNR_non_linear" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method calculates the SNR for a given channel on a given link in a given graph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Plot</strong> – </p></li>
+<li><p><strong>COI</strong> – Channel of interest</p></li>
+<li><p><strong>edge</strong> – link in graph</p></li>
+<li><p><strong>graph</strong> – graph to use</p></li>
+<li><p><strong>gamma</strong> – non-linear coefficient</p></li>
+<li><p><strong>channel_bandwidth</strong> – bandwidth of channel (32 Gbaud)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>SNR value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_SNR_shortest_path_node_pair">
+<code class="sig-name descname">get_SNR_shortest_path_node_pair</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">channels</span></em>, <em class="sig-param"><span class="n">unique_paths</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_SNR_shortest_path_node_pair" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_SNR_uniform">
+<code class="sig-name descname">get_SNR_uniform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">edge</span></em>, <em class="sig-param"><span class="n">gamma</span><span class="o">=</span><span class="default_value">1.2</span></em>, <em class="sig-param"><span class="n">channel_bandwidth</span><span class="o">=</span><span class="default_value">32000000000</span></em>, <em class="sig-param"><span class="n">C_r</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">alpha</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">D</span><span class="o">=</span><span class="default_value">18</span></em>, <em class="sig-param"><span class="n">Plot</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'test'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_SNR_uniform" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>edge</strong> – </p></li>
+<li><p><strong>graph</strong> – </p></li>
+<li><p><strong>gamma</strong> – </p></li>
+<li><p><strong>channel_bandwidth</strong> – </p></li>
+<li><p><strong>C_r</strong> – </p></li>
+<li><p><strong>alpha</strong> – </p></li>
+<li><p><strong>D</strong> – </p></li>
+<li><p><strong>Plot</strong> – </p></li>
+<li><p><strong>name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_SPM_n">
+<code class="sig-name descname">get_SPM_n</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">COI</span></em>, <em class="sig-param"><span class="n">gamma</span></em>, <em class="sig-param"><span class="n">bandwidth</span></em>, <em class="sig-param"><span class="n">alpha</span></em>, <em class="sig-param"><span class="n">D</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_SPM_n" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method calculates the self phase modulation (SPM) noise coefficient for a given channel of interest(COI)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frequency_i</strong> – frequency of COI</p></li>
+<li><p><strong>gamma</strong> – non-linear-coefficient</p></li>
+<li><p><strong>bandwidth</strong> – bandwidth of channel (32Gbaud channels - same bandwidth)</p></li>
+<li><p><strong>C_r</strong> – slope of the linear regression of the normalized Raman gain spectrum</p></li>
+<li><p><strong>alpha</strong> – attenuation coefficient</p></li>
+<li><p><strong>beta_2</strong> – GVD parameter</p></li>
+<li><p><strong>beta_3</strong> – slope of GVD parameter</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>SPM coefficient</p>
+</dd>
+</dl>
+<p>“:rtype: float</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_XPM_n">
+<code class="sig-name descname">get_XPM_n</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">COI</span></em>, <em class="sig-param"><span class="n">edge</span></em>, <em class="sig-param"><span class="n">gamma</span></em>, <em class="sig-param"><span class="n">bandwidth</span></em>, <em class="sig-param"><span class="n">alpha</span></em>, <em class="sig-param"><span class="n">D</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_XPM_n" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method calculates the cross phase modulation (XPM) for a given COI and edge in a graph with other
+interfering channels. It does it for variably loaded channels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>COI</strong> – Channel of interest (integer - corresponds to the wavelengths used for channel)</p></li>
+<li><p><strong>edge</strong> – Link of graph that is being calculated for</p></li>
+<li><p><strong>graph</strong> – graph that is being considered (nx.Graph())</p></li>
+<li><p><strong>gamma</strong> – non-linear-coefficient</p></li>
+<li><p><strong>bandwidth</strong> – bandwidth of channel (32Gbaud channels - same bandwidth)</p></li>
+<li><p><strong>C_r</strong> – slope of the linear regression of the normalized Raman gain spectrum</p></li>
+<li><p><strong>alpha</strong> – attenuation coefficient</p></li>
+<li><p><strong>launch_power</strong> – power at which channel is launched (dBm)</p></li>
+<li><p><strong>beta_2</strong> – GVD parameter</p></li>
+<li><p><strong>beta_3</strong> – slope of GVD parameter</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>XPM coefficient</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_eta">
+<code class="sig-name descname">get_eta</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">B_ref</span></em>, <em class="sig-param"><span class="n">_lambda</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">L</span></em>, <em class="sig-param"><span class="n">D</span></em>, <em class="sig-param"><span class="n">gamma</span></em>, <em class="sig-param"><span class="n">channels</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_eta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_lightpath_capacities_PLI">
+<code class="sig-name descname">get_lightpath_capacities_PLI</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wavelengths_dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_lightpath_capacities_PLI" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_lightpath_capacities_no_PLI">
+<code class="sig-name descname">get_lightpath_capacities_no_PLI</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_lightpath_capacities_no_PLI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_non_linear_LOGON">
+<code class="sig-name descname">get_non_linear_LOGON</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">beta2_n</span></em>, <em class="sig-param"><span class="n">gamma_n</span><span class="o">=</span><span class="default_value">0.0012</span></em>, <em class="sig-param"><span class="n">alpha_n</span><span class="o">=</span><span class="default_value">0.0002</span></em>, <em class="sig-param"><span class="n">a_n</span><span class="o">=</span><span class="default_value">16.0</span></em>, <em class="sig-param"><span class="n">bandwidth_WDM</span><span class="o">=</span><span class="default_value">32000000000</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_non_linear_LOGON" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method gets the non_linear contribution via LOGON, approximating NSR for optimising launch powers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>beta2_n</strong> – </p></li>
+<li><p><strong>gamma_n</strong> – </p></li>
+<li><p><strong>alpha_n</strong> – </p></li>
+<li><p><strong>a_n</strong> – </p></li>
+<li><p><strong>bandwidth_WDM</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.get_non_linear_coefficient">
+<code class="sig-name descname">get_non_linear_coefficient</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">edge</span></em>, <em class="sig-param"><span class="n">gamma</span><span class="o">=</span><span class="default_value">0.0012</span></em>, <em class="sig-param"><span class="n">bandwidth</span><span class="o">=</span><span class="default_value">32000000000</span></em>, <em class="sig-param"><span class="n">alpha</span><span class="o">=</span><span class="default_value">4.605111673958094e-05</span></em>, <em class="sig-param"><span class="n">D</span><span class="o">=</span><span class="default_value">1.6999999999999996e-05</span></em>, <em class="sig-param"><span class="n">coherence_factor</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">Plot</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'ISRS'</span></em>, <em class="sig-param"><span class="n">channels_full</span><span class="o">=</span><span class="default_value">156</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.get_non_linear_coefficient" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method calculates the SPM and XPM coefficients and returns the total non-linear coefficient.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>D</strong> – Dispersion parameter</p></li>
+<li><p><strong>spans</strong> – amount of spans the link has</p></li>
+<li><p><strong>COI</strong> – Channel of interest (integer - corresponds to the wavelengths used for channel)</p></li>
+<li><p><strong>edge</strong> – Link of graph that is being calculated for</p></li>
+<li><p><strong>graph</strong> – graph that is being considered (nx.Graph())</p></li>
+<li><p><strong>gamma</strong> – non-linear-coefficient</p></li>
+<li><p><strong>bandwidth</strong> – bandwidth of channel (32Gbaud channels - same bandwidth)</p></li>
+<li><p><strong>C_r</strong> – slope of the linear regression of the normalized Raman gain spectrum</p></li>
+<li><p><strong>alpha</strong> – attenuation coefficient</p></li>
+<li><p><strong>beta_2</strong> – GVD parameter</p></li>
+<li><p><strong>beta_3</strong> – slope of GVD parameter</p></li>
+<li><p><strong>coherence_factor</strong> – (…)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>non-linear coefficient</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.nodes_to_edges">
+<code class="sig-name descname">nodes_to_edges</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.nodes_to_edges" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to convert a path into a list of edges.
+:param nodes: path to convert - [path]
+:return: list of edges
+:rtype: [(edge), …, (edge)]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.PhysicalLayer.PhysicalLayer.update_launch_powers">
+<code class="sig-name descname">update_launch_powers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">D</span><span class="o">=</span><span class="default_value">18</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.PhysicalLayer.PhysicalLayer.update_launch_powers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-NetworkToolkit.Routing.Heuristics">
+<span id="routing-tools"></span><h1>Routing Tools<a class="headerlink" href="#module-NetworkToolkit.Routing.Heuristics" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="NetworkToolkit.Routing.Heuristics.Heuristics">
+<em class="property">class </em><code class="sig-prename descclassname">NetworkToolkit.Routing.Heuristics.</code><code class="sig-name descname">Heuristics</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">channels</span></em>, <em class="sig-param"><span class="n">channel_bandwidth</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.Heuristics.Heuristics" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="NetworkToolkit.Routing.Heuristics.Heuristics.FF_WA">
+<code class="sig-name descname">FF_WA</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">LA</span></em>, <em class="sig-param"><span class="n">channels</span></em>, <em class="sig-param"><span class="n">channel_bandwidth</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.Heuristics.Heuristics.FF_WA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to assign wavelengths for all paths previously assigned.
+:param graph:               Graph to use - nx.Graph()
+:param LA:                  Lightpath assignment - list
+:param channels:            Amount of channels available - int
+:param channel_bandwidth:   Channel bandwidth available - float
+:return:                    Wavelength assignment dictionary - dict</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.Heuristics.Heuristics.FF_kSP">
+<code class="sig-name descname">FF_kSP</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">traffic_matrix_connection_requests</span></em>, <em class="sig-param"><span class="n">e</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">order_aware</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">sort_length</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.Heuristics.Heuristics.FF_kSP" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method implements a first fit k shortest paths algorithm for a optical transport network. Call a k-shortest path method before calling this method.
+:return: None - assigns light paths and wavelengths to global variables that can then be accessed.
+:rtype: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.Heuristics.Heuristics.FF_return">
+<code class="sig-name descname">FF_return</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">channels</span></em>, <em class="sig-param"><span class="n">W</span></em>, <em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.Heuristics.Heuristics.FF_return" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to return the first available wavelength for a path W: ExChannes matrix and a path.
+:param graph:       Graph to use - nx.Graph()
+:param channels:    Amount of Channels to use - int
+:param W:           Exchange matrix - ndarray
+:param path:        Path to find wavelength for - list
+:return:            Wavelength for path - int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.Heuristics.Heuristics.add_wavelength_path_to_W">
+<code class="sig-name descname">add_wavelength_path_to_W</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">W</span></em>, <em class="sig-param"><span class="n">path</span></em>, <em class="sig-param"><span class="n">wavelength</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.Heuristics.Heuristics.add_wavelength_path_to_W" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to add a wavelength to a W matrix
+:param graph:       Graph to use - nx.Graph()
+:param W:           W matrix to add to - ndarray
+:param path:        Path to add the wavelength to - list
+:param wavelength:  Wavelength to add to - int
+:return:            The new W matrix - ndarray</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.Heuristics.Heuristics.kSP_CA_LA">
+<code class="sig-name descname">kSP_CA_LA</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">k_SP</span></em>, <em class="sig-param"><span class="n">traffic_matrix_connection_requests</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.Heuristics.Heuristics.kSP_CA_LA" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method assigns the lightpaths for MNH weighting and congestion awareness.
+:param graph:                               Graph to use - nx.Graph()
+:param k_SP:                                List of k shortest paths - list
+:param traffic_matrix_connection_requests:  NxN numpy array that gives the connection requests for the scheme to assign. - nparray
+:return:                                    List of light paths - list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.Heuristics.Heuristics.k_SP_CA_FF">
+<code class="sig-name descname">k_SP_CA_FF</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">traffic_matrix_connection_requests</span></em>, <em class="sig-param"><span class="n">e</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.Heuristics.Heuristics.k_SP_CA_FF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to do the lightpath assignment with k-shortest-paths congestion-aware and the wavelength assignment with first fit.
+:param traffic_matrix_connection_requests: The number NxN array that holds the traffic connection requests.
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.Heuristics.Heuristics.k_SP_FF">
+<code class="sig-name descname">k_SP_FF</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">traffic_matrix_connection_requests</span></em>, <em class="sig-param"><span class="n">e</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.Heuristics.Heuristics.k_SP_FF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method that implements the k shortest path first fit algorithm for RWA.
+:param traffic_matrix_connection_requests: NxN matrix of connections to be established
+:param e: k+e length paths to be used
+:return: whether the TM was blocked or not - Boolean</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.Heuristics.Heuristics.k_SP_LA">
+<code class="sig-name descname">k_SP_LA</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">k_SP</span></em>, <em class="sig-param"><span class="n">traffic_matrix_connection_requests</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.Heuristics.Heuristics.k_SP_LA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method for the lightpath assignment after the k-shortest path scheme.
+:param graph:                               Graph to use - nx.Graph()
+:param k_SP:                                list of k-shortest paths - list returned from Tools.get_k_shortest_paths_MNH(graph, e=e)
+:param traffic_matrix_connection_requests:  NxN numpy array that gives the connection requests for the scheme to assign. - nparray
+:return:                                    Lightpaths - list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.Heuristics.Heuristics.static_baroni_simple_SNR_LA">
+<code class="sig-name descname">static_baroni_simple_SNR_LA</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">k_SP</span></em>, <em class="sig-param"><span class="n">iter</span><span class="o">=</span><span class="default_value">100000</span></em>, <em class="sig-param"><span class="n">initial_demand</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.Heuristics.Heuristics.static_baroni_simple_SNR_LA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deprecated -  update
+This method assigns lightpaths given SNR weighting and also congestion awareness.
+:param initial_demand:
+:param iter: limit for the iteration of to try and ease the congestion on highly congested links
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.Heuristics.Heuristics.static_optimised_baroni_MNH_LA">
+<code class="sig-name descname">static_optimised_baroni_MNH_LA</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">k_SP</span></em>, <em class="sig-param"><span class="n">e</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.Heuristics.Heuristics.static_optimised_baroni_MNH_LA" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method implements the optimised baroni MNH lightpath assignment. Call k-shortest path algorithm before for the self.equal_cost_path variable to be available.
+It will assign a lightpath assignment to a single uniform demand between every node pair in the graph.
+:param graph:   Graph to use - nx.Graph()
+:param k_SP:    List of k-shortest paths - list
+:param e:       Len(MNH) + e to allow for finding new k-shortest paths - int
+:return:        List of lightpaths - list
+:rtype: list</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-NetworkToolkit.Routing.ILP"></span><dl class="py class">
+<dt id="NetworkToolkit.Routing.ILP.ILP">
+<em class="property">class </em><code class="sig-prename descclassname">NetworkToolkit.Routing.ILP.</code><code class="sig-name descname">ILP</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">channels</span></em>, <em class="sig-param"><span class="n">channel_bandwidth</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.ILP.ILP" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="NetworkToolkit.Routing.ILP.ILP.maximise_throughput">
+<code class="sig-name descname">maximise_throughput</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.ILP.ILP.maximise_throughput" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.ILP.ILP.maximise_uniform_set_demands">
+<code class="sig-name descname">maximise_uniform_set_demands</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.ILP.ILP.maximise_uniform_set_demands" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.ILP.ILP.minimise_wavelengths">
+<code class="sig-name descname">minimise_wavelengths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.ILP.ILP.minimise_wavelengths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="NetworkToolkit.Routing.ILP.ILP.static_ILP">
+<code class="sig-name descname">static_ILP</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">max_seconds</span><span class="o">=</span><span class="default_value">600</span></em>, <em class="sig-param"><span class="n">min_wave</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">max_D</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">solver_name</span><span class="o">=</span><span class="default_value">'GRB'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#NetworkToolkit.Routing.ILP.ILP.static_ILP" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method implements a static ILP solution for the k-shortest equal cost paths in a optical transport network. Make sure to call k-shortest paths (MNH or SNR) to get the k-shortest paths before
+calling this method.
+:return: Nothing, assigns a global RWA to wavelengths and lightpaths variables.
+:rtype: None</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Robin Matzner
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXX-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>
