@@ -11,7 +11,7 @@ if __name__ == "__main__":
     lambda_list = []
     for p in p_list:
         for i in range(1,8):
-            graph = nx.read_gpickle("/Users/yashvirsangha/Desktop/Third_Year_Project/Code_Robin/networktoolbox-master/scripts/Yashvir/Data/graph_{}-{}_{}.gpickle".format(nodes,i,p))
+            graph = nx.read_gpickle("../TYP_code/networktoolbox-master/scripts/Yashvir/Data/graph_{}-{}_{}.gpickle".format(nodes,i,p))
             graph = nx.relabel.convert_node_labels_to_integers(graph, first_label=1)
             assert type(graph) == nx.classes.graph.Graph
             network = nt.Network.OpticalNetwork(graph)
@@ -24,7 +24,7 @@ if __name__ == "__main__":
             time_taken = time.perf_counter()-time_start
             print("time: {}s".format(time_taken))
             lambda_list.append((graph.number_of_edges(), data["objective"], data["status"], time_taken))
-        with open("/Users/yashvirsangha/Desktop/Third_Year_Project/Code_Robin/networktoolbox-master/scripts/Yashvir/Data/ILP-{}-results.txt".format(i), 'w') as f:
+        with open("../TYP_code/networktoolbox-master/scripts/Yashvir/Data/ILP-{}-results.txt".format(i), 'w') as f:
             f.write("E \t lambda \t status \t time taken\n")
             for E, objective, status, time in lambda_list:
 
