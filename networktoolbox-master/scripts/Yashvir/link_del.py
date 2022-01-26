@@ -3,9 +3,6 @@ import networkx as nx
 import time
 import random
 
-
-link_remove = 1 
-
 if __name__ == "__main__":
 
     nodes=15
@@ -15,10 +12,9 @@ if __name__ == "__main__":
         graph = nx.read_gpickle("/Users/yashvirsangha/Desktop/Third_Year_Project/TYP_Code/networktoolbox-master/scripts/Yashvir/Data/graph_{}_{}.gpickle".format(nodes,p))
         graph = nx.relabel.convert_node_labels_to_integers(graph, first_label=1)
 
-        remove = random.sample(graph.edges(), link_remove)
-        graph.remove_edges_from(remove)\
-
-        nx.write_gpickle(graph, "/Users/yashvirsangha/Desktop/Third_Year_Project/TYP_Code/networktoolbox-master/scripts/Yashvir/Data/graph_{}-{}_{}.gpickle".format(nodes,link_remove,p))
+        for i in range(1, 8):
+            graph.remove_edges_from(random.sample(graph.edges(), i))
+            nx.write_gpickle(graph, "/Users/yashvirsangha/Desktop/Third_Year_Project/TYP_Code/networktoolbox-master/scripts/Yashvir/Data/graph_{}-{}_{}.gpickle".format(nodes,i,p))
 
 
 
