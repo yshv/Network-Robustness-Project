@@ -38,4 +38,4 @@ mip
 pip install mip
 
 gurobi
-conda install -c gurobi gurobi
+x§
