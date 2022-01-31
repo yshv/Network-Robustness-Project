@@ -10,8 +10,9 @@ if __name__ == "__main__":
     p_list = [0.3,0.4,0.5,0.6,0.7,0.8,0.9]
     lambda_list = []
     for p in p_list:
-        for i in range(1,8):
+        for i in range(1,5):
             graph = nx.read_gpickle("../TYP_code/networktoolbox-master/scripts/Yashvir/Data/graph_{}-{}_{}.gpickle".format(nodes,i,p))
+            print("../TYP_code/networktoolbox-master/scripts/Yashvir/Data/graph_{}-{}_{}.gpickle".format(nodes,i,p))
             graph = nx.relabel.convert_node_labels_to_integers(graph, first_label=1)
             assert type(graph) == nx.classes.graph.Graph
             network = nt.Network.OpticalNetwork(graph)

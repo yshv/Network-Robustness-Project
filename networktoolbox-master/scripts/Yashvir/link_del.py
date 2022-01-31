@@ -12,8 +12,10 @@ if __name__ == "__main__":
         graph = nx.read_gpickle("/Users/yashvirsangha/Desktop/Third_Year_Project/TYP_Code/networktoolbox-master/scripts/Yashvir/Data/graph_{}_{}.gpickle".format(nodes,p))
         graph = nx.relabel.convert_node_labels_to_integers(graph, first_label=1)
 
-        for i in range(1, 8):
+        for i in range(1, 5):
             graph.remove_edges_from(random.sample(graph.edges(), i))
+            list(nx.isolates(graph))
+            graph.remove_nodes_from(list(nx.isolates(graph)))
             nx.write_gpickle(graph, "/Users/yashvirsangha/Desktop/Third_Year_Project/TYP_Code/networktoolbox-master/scripts/Yashvir/Data/graph_{}-{}_{}.gpickle".format(nodes,i,p))
 
 
