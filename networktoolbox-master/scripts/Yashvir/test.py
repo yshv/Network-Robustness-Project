@@ -17,7 +17,7 @@ if __name__ == "__main__":
         print("starting wavelength requirement ILP")
         time_start = time.perf_counter()
 
-        data = network.rwa.static_ILP(min_wave=True, max_time=3600, e=20, k=20, threads=20,
+        data = network.rwa.static_ILP(min_wave=True, max_time=10800, e=20, k=20, threads=20,
                                       node_file_start=0.01)
         time_taken = time.perf_counter()-time_start
         print("time: {}s".format(time_taken))
