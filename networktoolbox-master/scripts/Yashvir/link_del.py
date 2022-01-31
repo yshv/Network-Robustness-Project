@@ -5,7 +5,7 @@ import random
 
 if __name__ == "__main__":
 
-    nodes=15
+    nodes=20
     p_list = [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
     lambda_list = []
     for p in p_list:
