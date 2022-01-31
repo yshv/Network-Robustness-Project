@@ -30,4 +30,5 @@ if __name__ == "__main__":
 
                 f.write("{} \t {} \t {} \t {}".format(E, objective, status, time))
                 f.write("\n")
+ç
 
