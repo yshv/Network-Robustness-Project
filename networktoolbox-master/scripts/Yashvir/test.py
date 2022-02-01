@@ -22,6 +22,8 @@ if __name__ == "__main__":
         time_taken = time.perf_counter()-time_start
         print("time: {}s".format(time_taken))
         lambda_list.append((graph.number_of_edges(), data["objective"], data["status"], time_taken))
+
+        
     with open("/home/zceeysa/Desktop/TYP_Code/networktoolbox/scripts/Yashvir/Data/ILP-results.txt", 'w') as f:
         f.write("E \t lambda \t status \t time taken\n")
         for E, objective, status, time in lambda_list:
