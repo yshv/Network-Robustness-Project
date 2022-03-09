@@ -10,8 +10,8 @@ if __name__ == "__main__":
     edges = 36
     p = 0.3
     lambda_list = []
-    for i in range(1,11):
-        graph = nx.read_gpickle("/Users/yashvirsangha/Desktop/Third_Year_Project/TYP_Code/networktoolbox-master/scripts/Yashvir/15_36_ER_data/{}({})-0_0.342.gpickle".format(edges,i))
+    for i in range(6,11):
+        graph = nx.read_gpickle("/Users/yashvirsangha/Desktop/Third_Year_Project/TYP_Code/networktoolbox-master/scripts/Yashvir/15_36_BA_data/15({})-0_3.gpickle".format(i))
         graph = nx.relabel.convert_node_labels_to_integers(graph, first_label=1)
 
         for x in range (1, 7):
@@ -25,7 +25,7 @@ if __name__ == "__main__":
                     
                 graph.remove_edges_from(sample)
 
-            nx.write_gpickle(graph, "/Users/yashvirsangha/Desktop/Third_Year_Project/TYP_Code/networktoolbox-master/scripts/Yashvir/15_36_ER_data/{}({})-{}_0.342.gpickle".format(edges,i,x*2))
+            nx.write_gpickle(graph, "/Users/yashvirsangha/Desktop/Third_Year_Project/TYP_Code/networktoolbox-master/scripts/Yashvir/15_36_BA_data/15({})-{}_3.gpickle".format(i,x*2))
 
 
 
