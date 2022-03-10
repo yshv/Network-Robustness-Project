@@ -1,0 +1,16 @@
+E 	 lambda 	 status 	 time taken
+15 	 9.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+13 	 11.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+11 	 21.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+15 	 9.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+13 	 9.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+11 	 16.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+15 	 9.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+13 	 13.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+11 	 25.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+15 	 9.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+13 	 9.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+11 	 16.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+15 	 8.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+13 	 13.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
+11 	 24.0 	 OptimizationStatus.OPTIMAL 	 <module 'time' (built-in)>
