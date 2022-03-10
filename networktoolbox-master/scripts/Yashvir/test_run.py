@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
         with open("/home/zceeysa/Desktop/TYP_Code/networktoolbox-master/scripts/Yashvir/test_data/ILP-results-{}.txt".format(num), 'w') as f:
             f.write("E \t lambda \t status \t time taken\n")
-            for E, objective, status, time in lambda_list:
+            for E, objective, status, _time in lambda_list:
 
                 f.write("{} \t {} \t {} \t {}".format(E, objective, status, time))
                 f.write("\n")
