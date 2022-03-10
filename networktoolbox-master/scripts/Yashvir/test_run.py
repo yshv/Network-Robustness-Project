@@ -11,7 +11,7 @@ if __name__ == "__main__":
     p_list = [0.342]
     lambda_list = []
     for num in range(1, 21):
-        for i in range(0, 14, 2):
+        for i in range(0, 6, 2):
             graph = nx.read_gpickle("/home/zceeysa/Desktop/TYP_Code/networktoolbox-master/scripts/Yashvir/test_data/15({})-{}_0.3.gpickle".format(num, i))
             graph = nx.relabel.convert_node_labels_to_integers(graph, first_label=1)
             assert type(graph) == nx.classes.graph.Graph
