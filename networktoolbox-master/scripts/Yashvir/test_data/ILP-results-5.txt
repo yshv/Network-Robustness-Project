@@ -1,0 +1,2 @@
+E 	 lambda 	 status 	 time taken
+11 	 16.0 	 OptimizationStatus.OPTIMAL 	 6.059754392132163
