@@ -9,9 +9,9 @@ if __name__ == "__main__":
 
     nodes=15
     p_list = [0.342]
-    for num in range(11, 21):
+    for num in range(21, 31):
+        lambda_list = []
         for i in range(0, 14, 2):
-            lambda_list = []
             graph = nx.read_gpickle("/home/zceeysa/Desktop/TYP_Code/networktoolbox-master/scripts/Yashvir/15_36_ER_data/36({})-{}_0.342.gpickle".format(num, i))
             graph = nx.relabel.convert_node_labels_to_integers(graph, first_label=1)
             assert type(graph) == nx.classes.graph.Graph
