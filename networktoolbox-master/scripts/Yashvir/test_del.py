@@ -10,7 +10,7 @@ if __name__ == "__main__":
     edges = 15
     p = 0.3
     lambda_list = []
-    for i in range(1,21):
+    for i in range(1,11):
         graph = nx.read_gpickle("/Users/yashvirsangha/Desktop/Third_Year_Project/TYP_Code/networktoolbox-master/scripts/Yashvir/test_data/15({})-0_0.3.gpickle".format(i))
         graph = nx.relabel.convert_node_labels_to_integers(graph, first_label=1)
 

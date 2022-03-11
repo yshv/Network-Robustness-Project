@@ -5,7 +5,7 @@ if __name__ == "__main__":
     p = 0.3
     desired = 15
     counter = 1
-    while counter != 21:
+    while counter != 11:
         graph = nx.erdos_renyi_graph(nodes, p)
         edges = graph.number_of_edges()
         print(graph.number_of_edges())

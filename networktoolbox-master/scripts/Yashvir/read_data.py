@@ -8,6 +8,7 @@ for i in range(1, 11):
 
         lambda_list = []
         edge_list = []
+        counter = 1
 
         for line in lines:
             edge = float(line[0:line.index(" ")])

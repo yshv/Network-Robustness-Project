@@ -4,8 +4,8 @@ if __name__ == "__main__":
     nodes = 15
     p = 0.342
     desired = 36
-    counter = 1
-    while counter != 11:
+    counter = 31
+    while counter != 101:
         graph = nx.erdos_renyi_graph(nodes, p)
         edges = graph.number_of_edges()
         print(graph.number_of_edges())
