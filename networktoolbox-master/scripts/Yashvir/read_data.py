@@ -4,7 +4,7 @@ import networkx as nx
 gradients = []
 alge_list = []
 
-start = 1
+start = 21
 finish = 100
 
 for i in range(start, finish +1):
@@ -33,10 +33,7 @@ for i in range(start, finish +1):
     graph = nx.relabel.convert_node_labels_to_integers(graph, first_label=1)
     alge_list.append(nx.algebraic_connectivity(graph))
 
-file = open("networktoolbox-master/scripts/Yashvir/lambda_alge.txt", "w")
-for index in range(len(gradients)):
-    file.write(str(gradients[index]) + " " + str(alge_list[index]) + "\n")
-file.close()
+
 
 
 
