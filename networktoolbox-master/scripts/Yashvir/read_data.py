@@ -1,8 +1,15 @@
 import numpy as np
+import networkx as nx
 
-for i in range(1, 11):
+gradients = []
+alge_list = []
 
-    with open("../TYP_code/networktoolbox-master/scripts/Yashvir/15_36_BA_data/ILP-results-{}.txt".format(i)) as f:
+start = 1
+finish = 100
+
+for i in range(start, finish +1):
+
+    with open("../TYP_code/networktoolbox-master/scripts/Yashvir/15_36_ER_data/ILP-results-{}.txt".format(i)) as f:
         lines = f.readlines()[1:]
 
 
@@ -18,7 +25,18 @@ for i in range(1, 11):
             lambda_list.append(lam)
 
         slope, intercept = np.polyfit(edge_list, lambda_list,1)
-        print(slope)
+        
+        gradients.append(slope)
+
+for i in range(start, finish +1):
+    graph = nx.read_gpickle("/Users/yashvirsangha/Desktop/Third_Year_Project/TYP_Code/networktoolbox-master/scripts/Yashvir/15_36_ER_Data/36({})-0_0.342.gpickle".format(i))
+    graph = nx.relabel.convert_node_labels_to_integers(graph, first_label=1)
+    alge_list.append(nx.algebraic_connectivity(graph))
+
+file = open("networktoolbox-master/scripts/Yashvir/lambda_alge.txt", "w")
+for index in range(len(gradients)):
+    file.write(str(gradients[index]) + " " + str(alge_list[index]) + "\n")
+file.close()
 
 
 
