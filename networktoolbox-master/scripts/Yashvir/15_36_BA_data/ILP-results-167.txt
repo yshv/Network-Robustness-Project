@@ -1,8 +1,0 @@
-E 	 lambda 	 status 	 time taken
-36 	 7.0 	 OptimizationStatus.OPTIMAL 	 453.2964946478605
-34 	 7.0 	 OptimizationStatus.OPTIMAL 	 804.9070994742215
-32 	 8.0 	 OptimizationStatus.OPTIMAL 	 88.48397433198988
-30 	 9.0 	 OptimizationStatus.OPTIMAL 	 194.07386934384704
-28 	 14.0 	 OptimizationStatus.OPTIMAL 	 106.17860285192728
-26 	 14.0 	 OptimizationStatus.OPTIMAL 	 96.78006607666612
-24 	 14.0 	 OptimizationStatus.OPTIMAL 	 111.48487818613648
