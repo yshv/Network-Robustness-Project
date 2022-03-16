@@ -22,7 +22,7 @@ def er_generation_distributed(nodes, p, edge_step, edge_count, graph_num):
             graph_copy.remove_edges_from(choices)
         nt.Database.insert_graph(graph_copy, "Topology_Data", "robustness-sim-test", node_data=True, use_pickle=True, type="ER",
                                  timestamp=datetime.utcnow(), graph_num=graph_num, edge_removal_count=edge_count, edge_removal_step=edge_step,
-                                 BA_m=m, edge_removal_idx=i)
+                                 ER_p=p, edge_removal_idx=i)
         graph = graph_copy
 
 
