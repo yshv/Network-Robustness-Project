@@ -27,21 +27,20 @@ def er_generation_distributed(nodes, p, edge_step, edge_count, graph_num):
 def er_generation(nodes, p):
     graph = nx.erdos_renyi_graph(nodes, p)
     num_edges = graph.number_of_edges()
-    while nx.is_connected(graph) != True or min([d for n, d in graph.degree()])<=2 or num_edges != 50:
+    while nx.is_connected(graph) != True or num_edges != 50:
         graph = nx.erdos_renyi_graph(nodes, p)
+        num_edges = graph.number_of_edges()
+        print(num_edges)
     return graph
 
 if __name__ == "__main__":
     nodes = 15
-<<<<<<< HEAD
-    graph_num = 200
-=======
-    graph_num = 20
->>>>>>> 67df06a3b63ec89f59dd15818e7462bce40c65fa
+    graph_num = 50
     edge_step = 2
     edge_count = 10
     for i in range(0, graph_num):
         er_generation_distributed(nodes, 0.45, edge_step, edge_count, i)
         print(i)
+        print("--------------------------")
 
 
