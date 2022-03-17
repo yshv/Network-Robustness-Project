@@ -32,6 +32,7 @@ def ba_generation(nodes, m):
     while nx.is_connected(graph) != True or min([d for n, d in graph.degree()])<=2:
         graph = nx.barabasi_albert_graph(nodes, m)
     return graph
+    
 
 if __name__ == "__main__":
     nodes = 15
