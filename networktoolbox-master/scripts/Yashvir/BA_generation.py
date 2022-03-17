@@ -36,11 +36,11 @@ def ba_generation(nodes, m):
 
 if __name__ == "__main__":
     nodes = 15
-    graph_num = 10
+    graph_num = 999
     edge_step = 2
     edge_count = 10
     ray.init()
-    tasks = [ba_generation_distributed.remote(nodes, 3, edge_step, edge_count, i) for i in range(0, graph_num)]
+    tasks = [ba_generation_distributed.remote(nodes, 5, edge_step, edge_count, i) for i in range(0, graph_num)]
     ray.get(tasks)
 
 
