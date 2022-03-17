@@ -37,7 +37,7 @@ def er_generation(nodes, p):
 
 if __name__ == "__main__":
     nodes = 15
-    graph_num = 1000
+    graph_num = 200
     edge_step = 2
     edge_count = 10
     ray.init()
