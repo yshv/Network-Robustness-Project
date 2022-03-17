@@ -5,9 +5,9 @@ from datetime import datetime
 import ray
 import copy
 
-
-def er_generation_distributed(nodes, p, edge_step, edge_count, graph_num):
-    graph = er_generation(nodes, p)
+@ray.remote
+def ba_generation_distributed(nodes, p, edge_step, edge_count, graph_num):
+    graph = ba_generation(nodes, p)
     nt.Database.insert_graph(graph, "Topology_Data", "robustness-sim-test-test", node_data=True, use_pickle=True, type="ER",
                              timestamp=datetime.utcnow(), graph_num=graph_num, edge_removal_count=edge_count, edge_removal_step=edge_step,
                              ER_p=p, edge_removal_idx=0)
@@ -25,19 +25,24 @@ def er_generation_distributed(nodes, p, edge_step, edge_count, graph_num):
                                  ER_p=p, edge_removal_idx=i)
         graph = graph_copy
 
-def er_generation(nodes, p):
+
+
+
+def ba_generation(nodes, p):
     graph = nx.erdos_renyi_graph(nodes, p)
     num_edges = graph.number_of_edges()
-    while nx.is_connected(graph) != True or min([d for n, d in graph.degree()])<=2:
+    while nx.is_connected(graph) != True or min([d for n, d in graph.degree()])<=2 or num_edges != 50:
         graph = nx.erdos_renyi_graph(nodes, p)
+        num_edges = graph.number_of_edges()
     return graph
 
 if __name__ == "__main__":
     nodes = 15
-    graph_num = 100
+    graph_num = 200
     edge_step = 2
     edge_count = 10
-    for i in range(0, graph_num):
-        er_generation_distributed(nodes, 0.45, edge_step, edge_count, i)
-        print(i)
+    ray.init()
+    tasks = [ba_generation_distributed.remote(nodes, 0.45, edge_step, edge_count, i) for i in range(0, graph_num)]
+    ray.get(tasks)
+
 
