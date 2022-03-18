@@ -16,10 +16,6 @@ def static_ilp_distributed(graph, _id, max_time=3600, e=20, k=20, threads=1, nod
     data = network.rwa.static_ILP(min_wave=True, max_time=max_time, e=e, k=k, threads=threads,
                                   node_file_start=node_file_start)
     time_taken = time.perf_counter()-time_start
-    connectivity = nx.edge_connectivity(graph)
-    diameter = nx.diameter(graph)
-    alge_con = nx.algebraic_connectivity(graph)
-    max_edge_conn = max(nx.edge_betweenness_centrality(graph).values()) 
     nt.Database.update_data_with_id(db, collection, _id, newvals={"$set": {"lambda_r":data["objective"],
                                                                            "lambda_r optimisation status": str(data["status"]),
                                                                            "lambda_r time": time_taken,
@@ -28,24 +24,18 @@ def static_ilp_distributed(graph, _id, max_time=3600, e=20, k=20, threads=1, nod
                                                                            "lambda_r k": k,
                                                                            "lambda_r threads":threads,
                                                                            "lambda_r node_file_start":node_file_start,
-                                                                           "lambda_r timestamp": datetime.utcnow(),
-                                                                           "edge conn": connectivity,
-                                                                           "diamter": diameter,
-                                                                           "algebraic connectivity": alge_con,
-                                                                           "max edge": max_edge_conn
-                                                                           }})
+                                                                           "lambda_r timestamp": datetime.utcnow()}})
     if actor is not None:
         actor.update.remote(1)
-        
 if __name__== "__main__":
 
     hostname = "128.40.41.48"
     port = 7112
     # ray.init(address='{}:{}'.format(hostname, port), _redis_password='5241590000000000', ignore_reinit_error=True)
     ray.init()
-    graph_list = nt.Database.read_topology_dataset_list("Topology_Data", "robustness-sim-test-test", find_dic={"lambda_r":{"$exists":False}})
+    graph_list = nt.Database.read_topology_dataset_list("Topology_Data", "robustness-sim", find_dic={"lambda_r":{"$exists":False}})
     pb = nt.Tools.ProgressBar(len(graph_list))
     actor = pb.actor
-    tasks = [static_ilp_distributed.remote(graph, _id, db="Topology_Data", collection="robustness-sim-test-test", actor=actor, max_time=3600, threads=num_cpus) for graph, _id in graph_list]
+    tasks = [static_ilp_distributed.remote(graph, _id, db="Topology_Data", collection="robustness-sim", actor=actor, max_time=3600, threads=num_cpus) for graph, _id in graph_list]
     pb.print_until_done()
     ray.get(tasks)
