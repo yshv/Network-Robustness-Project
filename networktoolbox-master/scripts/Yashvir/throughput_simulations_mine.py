@@ -16,7 +16,7 @@ def static_ilp_distributed(graph, _id, max_time=3600, e=20, k=20, threads=1, nod
                                   node_file_start=node_file_start)
     time_taken = time.perf_counter()-time_start
     connectivity = nx.edge_connectivity(graph)
-    diameter = nx.diamter(graph)
+    diameter = nx.diameter(graph)
     alge_con = nx.algebraic_connectivity(graph)
     max_edge_conn = max(nx.edge_betweenness_centrality(graph).values()) 
     nt.Database.update_data_with_id(db, collection, _id, newvals={"$set": {"lambda_r":data["objective"],
@@ -29,7 +29,7 @@ def static_ilp_distributed(graph, _id, max_time=3600, e=20, k=20, threads=1, nod
                                                                            "lambda_r node_file_start":node_file_start,
                                                                            "lambda_r timestamp": datetime.utcnow(),
                                                                            "edge conn": connectivity,
-                                                                           "diamter": diamter,
+                                                                           "diamter": diameter,
                                                                            "algebraic connectivity": alge_con,
                                                                            "max edge": max_edge_conn
                                                                            }})
