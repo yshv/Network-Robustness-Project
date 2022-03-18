@@ -40,7 +40,7 @@ if __name__== "__main__":
     hostname = "128.40.41.48"
     port = 7112
     # ray.init(address='{}:{}'.format(hostname, port), _redis_password='5241590000000000', ignore_reinit_error=True)
-    graph_list = nt.Database.read_topology_dataset_list("Topology_Data", "robustness-sim-test", find_dic={"lambda_r":{"$exists":False}})
+    graph_list = nt.Database.read_topology_dataset_list("Topology_Data", "robustness-sim-test-test", find_dic={"lambda_r":{"$exists":False}})
     for graph, _id in graph_list:
-        static_ilp_distributed(graph, _id, db="Topology_Data", collection="robustness-sim-test", max_time=3600, threads=num_cpus)
+        static_ilp_distributed(graph, _id, db="Topology_Data", collection="robustness-sim-test-test", max_time=3600, threads=num_cpus)
 
