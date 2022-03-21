@@ -9,6 +9,7 @@ if __name__ == "__main__":
 
     nodes=15
     p_list = [0.342]
+    lambda_list = []
 
     graph = nx.read_gpickle("/home/zceeysa/Desktop/TYP_Code/networktoolbox-master/scripts/Yashvir/test_data/fig2.gpickle")
     graph = nx.relabel.convert_node_labels_to_integers(graph, first_label=1)
