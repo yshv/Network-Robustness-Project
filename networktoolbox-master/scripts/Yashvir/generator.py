@@ -92,10 +92,12 @@ def filter(gs, target_nv):
         #print('\n'.join([str(a) for a in mem]))
     return gs2
 
-NV = 4
-print('Building...')
-gs = make_graphs(NV)
-print('Filtering...')
-gs = filter(gs, NV)
-print(f'Drawing {len(gs)} graphs...')
-plot_graphs(gs, figsize=14, dotsize=20)
+
+for i in range(3, 7)
+    NV = i
+    print('Building...')
+    gs = make_graphs(NV)
+    print('Filtering...')
+    gs = filter(gs, NV)
+    print(f'Drawing {len(gs)} graphs...')
+    plot_graphs(gs, figsize=14, dotsize=20)
