@@ -33,9 +33,9 @@ if __name__== "__main__":
     port = 7112
     # ray.init(address='{}:{}'.format(hostname, port), _redis_password='5241590000000000', ignore_reinit_error=True)
     ray.init()
-    graph_list = nt.Database.read_topology_dataset_list("Topology_Data", "robustness-sim-test", find_dic={"lambda_r":{"$exists":False}})
+    graph_list = nt.Database.read_topology_dataset_list("Topology_Data", "robustness-sim-21", find_dic={"lambda_r":{"$exists":False}})
     pb = nt.Tools.ProgressBar(len(graph_list))
     actor = pb.actor
-    tasks = [static_ilp_distributed.remote(graph, _id, db="Topology_Data", collection="robustness-sim-test", actor=actor, max_time=3600, threads=num_cpus) for graph, _id in graph_list]
+    tasks = [static_ilp_distributed.remote(graph, _id, db="Topology_Data", collection="robustness-sim-21", actor=actor, max_time=3600, threads=num_cpus) for graph, _id in graph_list]
     pb.print_until_done()
     ray.get(tasks)
