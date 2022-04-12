@@ -1,11 +1,11 @@
 import networkx as nx
 
 if __name__ == "__main__":
-    nodes = 15
-    p = 0.342
-    desired = 36
-    counter = 100
-    while counter != 201:
+    nodes = 10
+    p = 0.45
+    desired = 21
+    counter = 1
+    while counter != 100:
         graph = nx.erdos_renyi_graph(nodes, p)
         edges = graph.number_of_edges()
         print(graph.number_of_edges())
