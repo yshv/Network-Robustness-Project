@@ -20,7 +20,7 @@ def plot_graphs(graphs, figsize=14, dotsize=20):
         g = nx.Graph()
         for e in graphs[i]:            
             g.add_edge(e[0],e[1])
-        nt.Database.insert_graph(graph, "Topology_Data", "robustness-sim-basic", node_data=True, use_pickle=True, type="basic",
+        nt.Database.insert_graph(g, "Topology_Data", "robustness-sim-basic", node_data=True, use_pickle=True, type="basic",
                             timestamp=datetime.utcnow())
 
 def make_graphs(n=2, i=None, j=None):
@@ -93,7 +93,7 @@ def filter(gs, target_nv):
     return gs2
 
 
-for i in range(3, 7)
+for i in range(8,9):
     NV = i
     print('Building...')
     gs = make_graphs(NV)

@@ -8,7 +8,7 @@ import copy
 @ray.remote
 def ba_generation_distributed(nodes, p, edge_step, edge_count, graph_num):
     graph = ba_generation(nodes, p)
-    nt.Database.insert_graph(graph, "Topology_Data", "robustness-sim-test-test", node_data=True, use_pickle=True, type="ER",
+    nt.Database.insert_graph(graph, "Topology_Data", "robustness-sim-21", node_data=True, use_pickle=True, type="ER",
                              timestamp=datetime.utcnow(), graph_num=graph_num, edge_removal_count=edge_count, edge_removal_step=edge_step,
                              ER_p=p, edge_removal_idx=0)
     for i in range(1, edge_count+1):
@@ -38,9 +38,9 @@ def ba_generation(nodes, p):
 
 if __name__ == "__main__":
     nodes = 10
-    graph_num = 100
+    graph_num = 20
     edge_step = 2
-    edge_count = 10
+    edge_count = 3
     ray.init()
     tasks = [ba_generation_distributed.remote(nodes, 0.45, edge_step, edge_count, i) for i in range(0, graph_num)]
     ray.get(tasks)
